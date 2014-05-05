@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" product-name="cw_content_scheduler" date="2014-05-05T14:41:00+01:00">
+		<header/>
+		<body>
+			<trans-unit id="tt_content.tx_cwcontentscheduler_schedule_amount">
+				<target>Publicatie Herhalingsinterval (waarde)</target>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_cwcontentscheduler_schedule_type">
+				<target>Publicatie Herhalingsinterval (eenheid)</target>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_cwcontentscheduler_schedule_type.empty">
+				<target>Geen</target>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_cwcontentscheduler_schedule_type.minutes">
+				<target>Minuten</target>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_cwcontentscheduler_schedule_type.hours">
+				<target>Uren</target>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_cwcontentscheduler_schedule_type.days">
+				<target>Dagen</target>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_cwcontentscheduler_schedule_type.weeks">
+				<target>Weken</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
