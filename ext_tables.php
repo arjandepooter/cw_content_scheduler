@@ -14,23 +14,23 @@ if(TRUE || $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['cw_content_scheduler']['setup
 	// Add schedulerfield to tt_content TCA
 	t3lib_extMgm::addTCAcolumns('tt_content', array(
 		'tx_cwcontentscheduler_schedule_amount' => array(
-			'label' => 'Publication Repeat Interval (value)',
+			'label' => 'LLL:EXT:cw_content_scheduler/Resources/Private/Language/locallang.xlf:tt_content.tx_cwcontentscheduler_schedule_amount',
 			'config' => array(
 				'type' => 'input',
 				'eval' => 'int',
 			),
 		),
 		'tx_cwcontentscheduler_schedule_type' => array(
-			'label' => 'Publication Repeat Interval (unit)',
+			'label' => 'LLL:EXT:cw_content_scheduler/Resources/Private/Language/locallang.xlf:tt_content.tx_cwcontentscheduler_schedule_type',
 			'config' => array(
 				'type' => 'select',
 				'default' => '',
 				'items' => array(
-					array('-------', ''),
-					array('minutes', 'm'),
-					array('hours', 'h'),
-					array('days', 'd'),
-					array('weeks', 'w'),
+					array('LLL:EXT:cw_content_scheduler/Resources/Private/Language/locallang.xlf:tt_content.tx_cwcontentscheduler_schedule_type.empty', ''),
+					array('LLL:EXT:cw_content_scheduler/Resources/Private/Language/locallang.xlf:tt_content.tx_cwcontentscheduler_schedule_type.minutes', 'm'),
+					array('LLL:EXT:cw_content_scheduler/Resources/Private/Language/locallang.xlf:tt_content.tx_cwcontentscheduler_schedule_type.hours', 'h'),
+					array('LLL:EXT:cw_content_scheduler/Resources/Private/Language/locallang.xlf:tt_content.tx_cwcontentscheduler_schedule_type.days', 'd'),
+					array('LLL:EXT:cw_content_scheduler/Resources/Private/Language/locallang.xlf:tt_content.tx_cwcontentscheduler_schedule_type.weeks', 'w'),
 				),
 			),
 		),

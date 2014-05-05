@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" product-name="cw_content_scheduler" date="2014-05-05T14:30:00+01:00">
+		<header/>
+		<body>
+			<trans-unit id="tt_content.tx_cwcontentscheduler_schedule_amount">
+				<source>Publication Repeat Interval (value)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_cwcontentscheduler_schedule_type">
+				<source>Publication Repeat Interval (unit)</source>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_cwcontentscheduler_schedule_type.empty">
+				<source>None</source>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_cwcontentscheduler_schedule_type.minutes">
+				<source>Minutes</source>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_cwcontentscheduler_schedule_type.hours">
+				<source>Hours</source>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_cwcontentscheduler_schedule_type.days">
+				<source>Days</source>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_cwcontentscheduler_schedule_type.weeks">
+				<source>Weeks</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
