@@ -11,9 +11,9 @@ Quickly you edit the content element which holds the banner and open the *Access
 
 You're all set for next Wednesday. But still, it's cumbersome to repeat this manual process for each and every Wednesday! Luckily, you have the Content Scheduler extension installed and it's a breeze to accomplish this.
 
-Right on the *Access* tab there are two fields added, conveniently labeled: **Publication Repeat Interval**. The input field takes a numeric value and the accompanying dropdown lets you select the repeat unit. Quickly you enter "1" in the input field and select "weeks" from the dropdown. You hit save and you're done!
+Right on the *Access* tab there are two fields available, conveniently labeled: **Publication Repeat Interval**. The input field takes a numeric value and the accompanying dropdown lets you select the repeat unit. Quickly you enter "1" in the input field and select "weeks" from the dropdown. You hit *Save* and you're done!
 
-The content element will be published every Wednesday from 20:00h to 20:25h.
+The content element will be published every Wednesday from 20:00h to 20:25h. You go home and grab a beer (or wine or coffee, if that's more of your liking).
 
 ## Installation
 
@@ -24,7 +24,7 @@ Follow these two steps to install the Content Scheduler extension:
 
 ## Usage
 
-The Content Scheduler extension adds a **Publication Repeat Interval** field to the Access tab of a content element. Here you specify the repeat interval for the publication of the content element. The repeat interval consists of two parts:
+The Content Scheduler extension adds a **Publication Repeat Interval** field to the *Access* tab of a content element. Here you specify the repeat interval for the publication of the content element. The repeat interval consists of two parts:
 
 1. The repeat interval value (e.g. "2")
 2. The repeat interval unit: `minutes, hours, days, weeks` (e.g. "weeks")
@@ -33,8 +33,8 @@ The above example results in "2 weeks", so the content element will be published
 
 How does Content Scheduler know *when* to publish the content element? Glad you asked! Content Scheduler uses the Publish Date and Expiration Date fields of the content element, available by default in TYPO3 CMS, to determine when to publish the content element. Based on the specified interval, the math is like this:
 
-1. Publish Date is used to determine the publication *day and time*. For example: if Publish Date is set to "20:00 6-5-2014" and Publication Repeat Interval to "3 days", the content element will be published on 6-5-2014 20:00h, 9-5-2014 20:00h, 12-5-2014 20:00h etc.
-2. Expiration Date is used to determine the publication *duration*. For example: if Publish Date is set to "20:00 6-5-2014", Expiration Date is set to "20:25 6-5-2014" and Publication Repeat Interval to "3 days", the content element will be published from 6-5-2014 20:00h - 20:25h, 9-5-2014 20:00h - 20:25h, 12-5-2014 20:00h - 20:25h etc.
+1. **Publish Date** is used to determine the publication *day and time*. For example: if Publish Date is set to "20:00 6-5-2014" and Publication Repeat Interval to "3 days", the content element will be published on 6-5-2014 20:00h, 9-5-2014 20:00h, 12-5-2014 20:00h etc.
+2. **Expiration Date** is used to determine the publication *duration*. For example: if Publish Date is set to "20:00 6-5-2014", Expiration Date is set to "20:25 6-5-2014" and Publication Repeat Interval to "3 days", the content element will be published from 6-5-2014 20:00h - 20:25h, 9-5-2014 20:00h - 20:25h, 12-5-2014 20:00h - 20:25h etc.
 
 Some more examples:
 
@@ -48,9 +48,9 @@ Some more examples:
 
 As nothing is perfect, there are a few caveats to using this extension:
 
-**Page cache lifetime**
+**Page cache lifetime should be smaller than the Publication Repeat Interval**
 
-Be sure to set the page cache lifetime to some value **lower** than the Publication Repeat Interval. Otherwise, the page is still cached when the content element should be published. There is no way Content Scheduler can invalidate the cache for this page, unfortunately.
+Be sure to set the page cache lifetime to some value **smaller** than the Publication Repeat Interval. Otherwise, the page is still cached when the content element should be published. There is no way Content Scheduler can invalidate the cache for this page, unfortunately.
 
 **Publication duration should be smaller than the Publication Repeat Interval**
 
