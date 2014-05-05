@@ -1,6 +1,6 @@
 # Content Scheduler
 
-The Content Scheduler (`EXT:cw_content_scheduler`) extension provides an easy way to publish your content on a repeating schedule. By applying a repeat interval to a content element, the content element gets repeatedly published and unpublished, based on the repeat interval.
+The Content Scheduler (`EXT:cw_content_scheduler`) extension provides an easy way to publish your content on a repeating schedule. By applying a Publication Repeat Interval to a content element, the content element gets repeatedly published and unpublished.
 
 Right, time for an example: Imagine you're working for a broadcasting company and your TV-show is aired every Wednesday evening from 20:00h to 20:25h. Yep, you're working for a prime time TV-show! You'd love to have a banner linking to the live stream, on a primary position on the homepage. But the banner should only be shown during the broadcasts on Wednesday evenings! There's no point in linking to an offline live stream, right?
 
@@ -9,9 +9,9 @@ Quickly you edit the content element which holds the banner and open the *Access
 * Publish Date: 20:00 6-5-2014
 * Expiration Date: 20:25 6-5-2014
 
-You're all set for next Wednesday. But still, it's cumbersome to repeat this manual process for each and every Wednesday! Luckily, you have the Content Scheduler extension installed and it's a breeze to accomplish this.
+You're all set for next Wednesday. But still, it's cumbersome to repeat this manual process for each and every Wednesday! Luckily, you have the Content Scheduler extension installed and now it's a breeze to accomplish this.
 
-Right on the *Access* tab there are two fields available, conveniently labeled: **Publication Repeat Interval**. The input field takes a numeric value and the accompanying dropdown lets you select the repeat unit. Quickly you enter "1" in the input field and select "weeks" from the dropdown. You hit *Save* and you're done!
+Right there on the *Access* tab two fields are available, conveniently labeled: **Publication Repeat Interval**. The input field takes a numeric value and the accompanying dropdown lets you select the repeat unit. Quickly you enter "1" in the input field and select "weeks" from the dropdown. You hit *Save* and you're done!
 
 The content element will be published every Wednesday from 20:00h to 20:25h. You go home and grab a beer (or wine or coffee, if that's more of your liking).
 
@@ -31,7 +31,7 @@ The Content Scheduler extension adds a **Publication Repeat Interval** field to 
 
 The above example results in "2 weeks", so the content element will be published every two weeks.
 
-How does Content Scheduler know *when* to publish the content element? Glad you asked! Content Scheduler uses the Publish Date and Expiration Date fields of the content element, available by default in TYPO3 CMS, to determine when to publish the content element. Based on the specified interval, the math is like this:
+How does Content Scheduler know *when* to publish the content element? Content Scheduler uses the Publish Date and Expiration Date fields of the content element, available by default in TYPO3 CMS, to determine when to publish the content element. Based on the specified interval, the math is like this:
 
 1. **Publish Date** is used to determine the publication *day and time*. For example: if Publish Date is set to "20:00 6-5-2014" and Publication Repeat Interval to "3 days", the content element will be published on 6-5-2014 20:00h, 9-5-2014 20:00h, 12-5-2014 20:00h etc.
 2. **Expiration Date** is used to determine the publication *duration*. For example: if Publish Date is set to "20:00 6-5-2014", Expiration Date is set to "20:25 6-5-2014" and Publication Repeat Interval to "3 days", the content element will be published from 6-5-2014 20:00h - 20:25h, 9-5-2014 20:00h - 20:25h, 12-5-2014 20:00h - 20:25h etc.
@@ -59,3 +59,10 @@ Be sure to make the publication duration (Expiration Date - Publish Date) **smal
 **Limited repeat schedules**
 
 We would love to be able to publish a content element 'every weekday' or 'every Tuesday and Thursday'. But, because of the limitations of the TYPO3 CMS Core in this regard, this is not possible. :(
+
+## Feedback
+
+Got feedback? Found a bug or have a great idea? Please report all [issues][issues] in the [GitHub project][github].
+
+[github]: https://github.com/cmsworks/cw_content_scheduler
+[issues]: https://github.com/cmsworks/cw_content_scheduler/issues
