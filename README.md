@@ -48,14 +48,14 @@ Some more examples:
 
 As nothing is perfect, there are a few caveats to using this extension:
 
-### Page cache lifetime
+**Page cache lifetime**
 
 Be sure to set the page cache lifetime to some value **lower** than the Publication Repeat Interval. Otherwise, the page is still cached when the content element should be published. There is no way Content Scheduler can invalidate the cache for this page, unfortunately.
 
-### Publication duration should be smaller than the Publication Repeat Interval
+**Publication duration should be smaller than the Publication Repeat Interval**
 
 Be sure to make the publication duration (Expiration Date - Publish Date) **smaller** than the Publication Repeat Interval. Otherwise, the content element would never get unpublished, since the publication hasn't finished before the next publication kicks in.
 
-### Limited repeat schedules
+**Limited repeat schedules**
 
 We would love to be able to publish a content element 'every weekday' or 'every Tuesday and Thursday'. But, because of the limitations of the TYPO3 CMS Core in this regard, this is not possible. :(
