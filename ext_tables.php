@@ -14,14 +14,14 @@ if(TRUE || $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['cw_content_scheduler']['setup
 	// Add schedulerfield to tt_content TCA
 	t3lib_extMgm::addTCAcolumns('tt_content', array(
 		'tx_cwcontentscheduler_schedule_amount' => array(
-			'label' => 'Scheduler',
+			'label' => 'Publication Repeat Interval (value)',
 			'config' => array(
 				'type' => 'input',
 				'eval' => 'int',
 			),
 		),
 		'tx_cwcontentscheduler_schedule_type' => array(
-			'label' => 'Scheduler',
+			'label' => 'Publication Repeat Interval (unit)',
 			'config' => array(
 				'type' => 'select',
 				'default' => '',

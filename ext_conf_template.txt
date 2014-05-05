@@ -1,2 +1,2 @@
-  # cat=settings; type=boolean; label=Replace startime/endtime with scheduled for tt_content
+  # cat=settings; type=boolean; label=Enable Content Scheduler for tt_content
 apply_to_ttcontent = 1
