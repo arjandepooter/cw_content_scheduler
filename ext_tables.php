@@ -18,6 +18,7 @@ if(TRUE || $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['cw_content_scheduler']['setup
 			'config' => array(
 				'type' => 'input',
 				'eval' => 'int',
+				'size' => 5,
 			),
 		),
 		'tx_cwcontentscheduler_schedule_type' => array(
