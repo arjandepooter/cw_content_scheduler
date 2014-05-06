@@ -36,7 +36,12 @@ if(TRUE || $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['cw_content_scheduler']['setup
 		),
 	), TRUE);
 
-	// Add field to TCA types
-	t3lib_extMgm::addToAllTCAtypes('tt_content', 'tx_cwcontentscheduler_schedule_amount,tx_cwcontentscheduler_schedule_type', '', 'after:endtime');
+	// Add fields to Access palette
+	t3lib_extMgm::addFieldsToPalette(
+		'tt_content',
+		'access',
+		'tx_cwcontentscheduler_schedule_amount,tx_cwcontentscheduler_schedule_type',
+		'after:endtime'
+	);
 }
 ?>
