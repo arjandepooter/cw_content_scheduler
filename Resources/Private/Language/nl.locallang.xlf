@@ -3,6 +3,9 @@
 	<file source-language="en" datatype="plaintext" original="messages" product-name="cw_content_scheduler" date="2014-05-05T14:41:00+01:00">
 		<header/>
 		<body>
+			<trans-unit id="preview">
+				<target>Publicatie Herhalingsinterval: %d %s</target>
+			</trans-unit>
 			<trans-unit id="tt_content.tx_cwcontentscheduler_schedule_amount">
 				<target>Publicatie Herhalingsinterval (waarde)</target>
 			</trans-unit>
