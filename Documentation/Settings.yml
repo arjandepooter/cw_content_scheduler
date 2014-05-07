@@ -6,13 +6,13 @@
 conf.py:
   copyright: 2014
   project: Content Scheduler
-  version: .
-  release: 
+  version: 0.1
+  release: 0.1.1
   latex_documents:
   - - Index
     - cw_content_scheduler.tex
     - Content Scheduler
-    - Arjan de Pooter
+    - Leon de Rijke
     - manual
   latex_elements:
     papersize: a4paper
