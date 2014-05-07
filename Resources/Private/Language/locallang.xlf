@@ -12,16 +12,16 @@
 			<trans-unit id="tt_content.tx_cwcontentscheduler_schedule_type.empty">
 				<source>None</source>
 			</trans-unit>
-			<trans-unit id="tt_content.tx_cwcontentscheduler_schedule_type.minutes">
+			<trans-unit id="tt_content.tx_cwcontentscheduler_schedule_type.m">
 				<source>Minutes</source>
 			</trans-unit>
-			<trans-unit id="tt_content.tx_cwcontentscheduler_schedule_type.hours">
+			<trans-unit id="tt_content.tx_cwcontentscheduler_schedule_type.h">
 				<source>Hours</source>
 			</trans-unit>
-			<trans-unit id="tt_content.tx_cwcontentscheduler_schedule_type.days">
+			<trans-unit id="tt_content.tx_cwcontentscheduler_schedule_type.d">
 				<source>Days</source>
 			</trans-unit>
-			<trans-unit id="tt_content.tx_cwcontentscheduler_schedule_type.weeks">
+			<trans-unit id="tt_content.tx_cwcontentscheduler_schedule_type.w">
 				<source>Weeks</source>
 			</trans-unit>
 		</body>

@@ -12,16 +12,16 @@
 			<trans-unit id="tt_content.tx_cwcontentscheduler_schedule_type.empty">
 				<target>Geen</target>
 			</trans-unit>
-			<trans-unit id="tt_content.tx_cwcontentscheduler_schedule_type.minutes">
+			<trans-unit id="tt_content.tx_cwcontentscheduler_schedule_type.m">
 				<target>Minuten</target>
 			</trans-unit>
-			<trans-unit id="tt_content.tx_cwcontentscheduler_schedule_type.hours">
+			<trans-unit id="tt_content.tx_cwcontentscheduler_schedule_type.h">
 				<target>Uren</target>
 			</trans-unit>
-			<trans-unit id="tt_content.tx_cwcontentscheduler_schedule_type.days">
+			<trans-unit id="tt_content.tx_cwcontentscheduler_schedule_type.d">
 				<target>Dagen</target>
 			</trans-unit>
-			<trans-unit id="tt_content.tx_cwcontentscheduler_schedule_type.weeks">
+			<trans-unit id="tt_content.tx_cwcontentscheduler_schedule_type.w">
 				<target>Weken</target>
 			</trans-unit>
 		</body>
