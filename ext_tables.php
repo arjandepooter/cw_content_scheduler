@@ -3,7 +3,7 @@ if (!defined('TYPO3_MODE')) {
 	die ('Access denied.');
 }
 
-if(TRUE || $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['cw_content_scheduler']['setup']['apply_to_ttcontent']) {
+if($GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['cw_content_scheduler']['setup']['apply_to_ttcontent']) {
 	t3lib_div::loadTCA('tt_content');
 
 	// Replace starttime and endtime with a scheduled enableField
