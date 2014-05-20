@@ -2,7 +2,8 @@
 	NOT(%1$s.%5$s = '')
 	AND %1$s.%4$s > 0
 	AND %1$s.%3$s > 0
-	AND %1$s.%2$s < %6$d,
+	AND %1$s.%2$s < %6$d
+    AND %1$s.%3$s < %6$d,
 	(%6$d - %1$s.%2$s) DIV
 	(%1$s.%4$s * (CASE %1$s.%5$s
 		WHEN 'm' THEN 60
