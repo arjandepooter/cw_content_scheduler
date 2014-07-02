@@ -23,8 +23,7 @@
  *  This copyright notice MUST APPEAR in all copies of the script!
  * ************************************************************* */
 
-require_once(PATH_typo3 . 'sysext/cms/layout/interfaces/interface.tx_cms_layout_tt_content_drawitemhook.php');
-
+use TYPO3\CMS\Backend\View\PageLayoutViewDrawItemHookInterface;
 /**
  * Hook to display information about the Publication Repeat Interval in Web>Page module
  *
@@ -32,7 +31,7 @@ require_once(PATH_typo3 . 'sysext/cms/layout/interfaces/interface.tx_cms_layout_
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  *
  */
-class Tx_CwContentScheduler_Hooks_CmsLayout implements tx_cms_layout_tt_content_drawItemHook {
+class Tx_CwContentScheduler_Hooks_CmsLayout implements PageLayoutViewDrawItemHookInterface {
 
 	/**
 	 * Path to the locallang file
