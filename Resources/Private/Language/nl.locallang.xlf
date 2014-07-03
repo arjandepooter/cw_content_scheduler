@@ -6,6 +6,12 @@
 			<trans-unit id="preview">
 				<target>Publicatie Herhalingsinterval: %d %s</target>
 			</trans-unit>
+			<trans-unit id="preview_label">
+				<target>Publicatie Herhalingsinterval:</target>
+			</trans-unit>
+			<trans-unit id="preview_value">
+				<target>%d %s</target>
+			</trans-unit>
 			<trans-unit id="tt_content.tx_cwcontentscheduler_schedule_amount">
 				<target>Publicatie Herhalingsinterval (waarde)</target>
 			</trans-unit>

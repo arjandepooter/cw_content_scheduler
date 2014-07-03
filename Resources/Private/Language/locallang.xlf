@@ -6,6 +6,12 @@
 			<trans-unit id="preview">
 				<source>Publication Repeat Interval: %d %s</source>
 			</trans-unit>
+			<trans-unit id="preview_label">
+				<source>Publication Repeat Interval:</source>
+			</trans-unit>
+			<trans-unit id="preview_value">
+				<source>%d %s</source>
+			</trans-unit>
 			<trans-unit id="tt_content.tx_cwcontentscheduler_schedule_amount">
 				<source>Publication Repeat Interval (value)</source>
 			</trans-unit>
